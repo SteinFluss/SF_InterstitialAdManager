@@ -17,7 +17,7 @@ public class InterstitialAdManager {
     private static OnFinishedListener mOnFinishedListener;
     private static boolean showAdsThisSession = true;
 
-    public static void render(Activity mainActivity, OnFinishedListener onFinishedListener, String interstitial_ad_unit_id){
+    public static void render(Activity mainActivity,String interstitial_ad_unit_id, OnFinishedListener onFinishedListener){
         //showAds = PreferenceUtils.showAds();
         if (PreferenceUtils.showAds(mainActivity.getApplicationContext()) && showAdsThisSession) {
             mOnFinishedListener = onFinishedListener;
